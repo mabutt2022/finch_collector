@@ -18,4 +18,7 @@ urlpatterns = [
     path('features/create/', views.FeatureCreate.as_view(), name='feature_create'),
     path('features/<int:pk>/update/', views.FeatureUpdate.as_view(), name='feature_update'),
     path('features/<int:pk>/delete/', views.FeatureDelete.as_view(), name='feature_delete'),
+    
+    # Photo URL
+    path('finch/<int:finch_id>/add_photo/', views.add_photo, name='add_photo'),
     ]
